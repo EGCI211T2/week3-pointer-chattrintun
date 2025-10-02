@@ -6,15 +6,21 @@ using namespace std;
 
 int main(int argc,char *argv[]){
   int *pa, *pb, i, temp, *p;
-//int a[SIZE] ={1,2,3,4,5,6,7,8,9,10}; remove
-int n;
-cout<<"How many numbers?";
-cin>>n;
-pa= new int[n];
-for(i=0; i<n; i++){
-  cin>>*pa;
-  pa++;
-}
+int n =argc-1;
+//cout<<"How many numbers?";
+//cin>>n;
+pa=new int[n];
+for(i=0;i<n;i++){
+
+   // cout<<"Input no."<<i<<":";
+
+    //cin>> *pa;
+
+    *pa=atoi(argv[i+1]);
+
+    pa++;
+
+  }
 pa-=n;
 
 
