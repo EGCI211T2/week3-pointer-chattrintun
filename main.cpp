@@ -44,6 +44,7 @@ for (i=0; i<n/2; i++)
   *pb = temp;
   pa++; pb--;
 }
+
 pa -=n/2;
 for(i=0; i<n-1; i++){
   cout<<setw(3)<<*pa;
